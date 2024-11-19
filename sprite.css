@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    height: 180px;
+    margin-top: 12px;
+    background-color: #fff;    
+}
+header nav{
+    display: flex;
+    gap: 120px;
+    margin-left: 120px;  
+}
+
+header nav ul {
+    display: inline-flex;
+    gap: 50px;
+    align-items: center;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .8s ease;
+}
+header nav ul li a:hover{
+    text-decoration: underline 3px solid black;
+
+}
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+header nav img{
+    width: 140px;
+    height: 100px;
+}
+
+header nav ul button{
+    background: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+header nav ul button:hover{
+    text-decoration: underline 3px solid black;
+}
+#Mypopover{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50% -50%);
+    border: none;
+    background-color: #fff;
+    width: 250px;
+    padding: 12px;
+}
+#Mypopover ul{
+    display: block;
+}
+#Mypopover ul li a{
+    font-weight: 400;
+    font-size: 16px;
+}
+#Mypopover ul li a:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#Mypopover2{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50% -50%);
+    border: none;
+    background-color: #fff;
+    width: 250px;
+    padding: 12px;
+}
+#Mypopover2 ul{
+    display: block;
+}
+#Mypopover2 ul li a{
+    font-weight: 400;
+    font-size: 16px;
+}
+#Mypopover2 ul li a:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+#Mypopover3{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    border: none;
+    background-color: #fff;
+    width: 250px;
+    padding: 12px;
+}
+#Mypopover3 ul{
+    display: block;
+}
+#Mypopover3 ul li a{
+    font-weight: 400;
+    font-size: 16px;
+}
+#Mypopover3 ul li a:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+header .log2{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    transform: translate(-50% -50%);
+}
+header .log2 img{
+    width: 80px;
+    height: 80px;
+}
+.slider{
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.images img{
+    height: 600px;
+    width: 100%;
+    border-radius: 45px;
+    transition: all 0.15s ease;
+    aspect-ratio: 21/9;
+}
+
+.images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label{
+    height: 20px;
+    width: 20px;
+    border: solid #161616 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover{
+    background-color: red;
+}
+
+#img1:checked ~ .m1{
+    margin-left: 0;
+}
+#img2:checked ~ .m2{
+    margin-left: -100%;
+}
+
+.sprite-products h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.sprite-content{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 320px;
+    margin-top: 120px;
+}
+.sprite-image{
+    width: 50%;
+    height: 70vh;
+    align-content: center;
+    border-radius: 12px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+
+}
+.sprite-image img{
+    width: 30%;
+    height: 60vh;
+    margin-left: 120px;
+}
+.sprite-text p{
+    margin-top: 15px;
+    margin-left: 260px;
+    width: 58%;
+    font-size: 18px;
+}
+
+.sprite-popover button{
+    position: absolute;
+    top: 206%;
+    left: 46%;
+    transform: translate(-50% -50%);
+    width: 20%;
+    height: 28px;
+    margin-top: 40px;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #eee;
+    cursor: pointer;
+}
+#mypopover{
+    width: 30%;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 220%;
+    left: 46%;
+    transform: translate(-50% -50%);
+}
+.sprite-popover .left{
+    float: left;
+    margin-left: 18px;
+}
+.sprite-popover .left span{
+    font-weight: bold;
+}
+
+.sprite-popover .left-text{
+    margin-left: 18px;
+}
+.sprite-popover .right{
+    float: right;
+    margin-right: 18px;
+}
+.sprite-popover .right{
+    font-weight: bold;
+}
+hr{
+    margin: 12px 0px;
+}
+.nrm{
+    float: right;
+    margin-right: 18px;
+}
+.video{
+    width: 100%;
+}
+
+.video iframe{
+    margin-top: 90px;
+    width: 80%;
+    height: 634px; 
+    margin-left: 175px;
+    border-radius: 45px; 
+}
+.head{
+    text-align: center;
+    margin-top: 80px;
+}
+.shopping-cards{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 45%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.shopping-cards input{
+    display: none;
+}
+.shop-cards{
+    margin-top: 80px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.5);
+    background-color: #fff;
+    border-radius: 14px;
+    height: 330px;
+    transition: all .8s ease-in-out;
+}
+.shop-cards img{
+    width: 320px;
+    height: 200px;
+    margin-top: 12px;
+}
+.shop-left a{
+    text-decoration: none;
+}
+.shop-left{
+    float: bottom-left;
+    margin-left: 18px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chuka{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.chuka label{
+    height: 20px;
+    width: 20px;
+    border: solid #161616 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.chuka label:hover{
+    background-color: green;
+}
+
+#cd1:checked ~ #d1{
+    margin-left: 0;
+}
+#cd2:checked ~ #d2{
+    margin-left: -50%;
+}
+#cd3:checked ~ #d3{
+    margin-left: -100%;
+}
+#cd4:checked ~ #d4{
+    margin-left: -150%;
+}
+#cd5:checked ~ #d5{
+    margin-left: -150%;
+}
+
+.black{
+    display: flex;
+    justify-content: space-around;
+    background-color: #161616;
+    color: white;
+    font-size: 22px;
+    width: 80%;
+    height: 120px;
+    margin: 0 auto; 
+    align-items: center;
+    margin-top: 80px;
+    border-radius: 16px;
+}
+.icons-black{
+    display: inline-flex;
+    gap: 40px;
+}   
+
+.icons-black a{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+}
+
+.test{
+    margin-top: 60px;
+    margin-left: 165px;
+    width: 76%;
+    font-size: 18px;
+}
+
+footer{
+    background-color: #000;
+    height: 80vh;
+}
+.footer-content{
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-logo img{
+    width: 220px;
+    height: 120px;
+    margin: 0;
+    cursor: pointer;
+}
+.footer-logo .footer-btn{
+    padding: 0.3em;
+    width: 320px;
+    border-radius: 22px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: 0;
+    margin-right: 40px;
+    border: 2px solid white;
+}
+
+.footer-logo .footer-btn:hover{
+    background-color: #333;
+}
+
+.footer-links{
+    margin-top: 60px;
+    display: block;
+    margin-left: 40px;
+    display: flex;
+    gap: 70px;
+}
+
+.footer-links a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 12px;
+}
+.footer-links p{
+    margin-bottom: 22px;
+    font-size: 13px;
+}
+
+.footer-icons{
+    display: inline-flex;
+    gap: 40px;
+    margin-left: 182px;
+}   
+
+.footer-icons a{
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+}
+
+.foot-text{
+    margin-top: 12px;
+    float: right;
+    font-size: 16px;
+}

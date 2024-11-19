@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubantu", "Poppins", sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+header{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 12px;
+    background-color: #fff;
+    
+}
+header nav{
+    display: flex;
+    gap: 120px;
+    margin-left: 120px;  
+}
+
+header nav ul {
+    display: inline-flex;
+    gap: 50px;
+    align-items: center;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .8s ease;
+   
+}
+header nav ul li a:hover{
+    text-decoration: underline 3px solid black;
+}
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+header nav img{
+    width: 140px;
+    height: 100px;
+}
+
+header nav ul button{
+    background: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+header nav ul button:hover{
+    text-decoration: underline 3px solid black;
+}
+
+#Mypopover1{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50% -50%);
+    border: none;
+    background-color: #fff;
+    width: 250px;
+    padding: 12px;
+}
+#Mypopover1 ul{
+    display: block;
+}
+#Mypopover1 ul li a{
+    font-weight: 400;
+    font-size: 16px;
+}
+#Mypopover1 ul li a:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#Mypopover2{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50% -50%);
+    border: none;
+    background-color: #fff;
+    width: 250px;
+    padding: 12px;
+}
+#Mypopover2 ul{
+    display: block;
+}
+#Mypopover2 ul li a{
+    font-weight: 400;
+    font-size: 16px;
+}
+#Mypopover2 ul li a:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+#Mypopover3{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    border: none;
+    background-color: #fff;
+    width: 250px;
+    padding: 12px;
+}
+#Mypopover3 ul{
+    display: block;
+}
+#Mypopover3 ul li a{
+    font-weight: 400;
+    font-size: 16px;
+}
+#Mypopover3 ul li a:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Logo- card Section */
+.four h3{
+    font-size: 32px;  
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.four p{
+    font-size: 28px;
+    margin-top: 50px;
+    text-align: center;
+}
+.four button{
+    position: absolute;
+    top: 48%;
+    left: 44%;
+    background-color: #eee;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translate(-50% -50%);
+}
+.four button:hover{
+    color: #666;
+}
+.four #Mypopover{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50% -50%);
+    border: none;
+    background-color: #eee;
+    width: 50%;
+    border-radius: 20px;
+}
+
+#Mypopover ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 0px;
+}
+#Mypopover ul li{
+    list-style: none;
+    cursor: pointer;
+}
+#Mypopover ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 40px;
+    flex-wrap: nowrap;
+}
+
+#Mypopover ul li a:hover{
+    color: black;
+}
+#Mypopover input{
+    display: none;
+    cursor: pointer;
+}
+
+.logo-card {
+    width: 250px;
+    background: #fff;
+    border-radius: 8px;
+    display: grid;
+    overflow: hidden;
+    object-fit: fill;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.logo-card:hover{
+    transform: scale(1.1);
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:100px;
+    gap: 50px;
+}
+.logo-card .logo1{
+    padding: 12px 12px;
+    text-decoration: none;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.logo-container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:40px;
+    gap: 50px;
+}
+
+/* image-card section */
+.card-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+}
+.card{
+    width: 420px;
+    height: 520px;
+    margin: 0 auto;
+    background: #ffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+}
+.card-content p{
+    color: #666;
+    margin-top: 32px;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+
+.main-card{
+    margin: 0  auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-left: 180px;
+
+}
+
+.img-cont img{
+    border-radius: 18px;
+    width: 600px;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.card-content p{
+    color: #666;
+    font-size: 22px;
+    width: 100%;
+    margin-top: 12px;
+    line-height: 1.3;
+}
+
+footer{
+    background-color: #000;
+    height: 80vh;
+}
+.footer-content{
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-logo img{
+    width: 220px;
+    height: 120px;
+    margin: 0;
+    cursor: pointer;
+}
+.footer-logo .footer-btn{
+    padding: 0.3em;
+    width: 320px;
+    border-radius: 22px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: 0;
+    margin-right: 40px;
+    border: 2px solid white;
+}
+
+.footer-logo .footer-btn:hover{
+    background-color: #333;
+}
+
+.footer-links{
+    margin-top: 60px;
+    display: block;
+    margin-left: 40px;
+    display: flex;
+    gap: 70px;
+}
+
+.footer-links a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 12px;
+}
+.footer-links p{
+    margin-bottom: 22px;
+    font-size: 13px;
+}
+
+.footer-icons{
+    display: inline-flex;
+    gap: 40px;
+    margin-left: 182px;
+}
+
+.footer-icons a{
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+}
+
+.foot-text{
+    margin-top: 12px;
+    float: right;
+    font-size: 16px;
+}
+.top{
+    color: white;   
+    font-size: 18px;
+    text-decoration: none;
+}
